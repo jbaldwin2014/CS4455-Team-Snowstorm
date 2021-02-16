@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
 	private float movementY;
 
 	private Rigidbody rb;
+	private Renderer Mesh;
 	private int count;
 
 	// At the start of the game..
@@ -24,6 +25,8 @@ public class PlayerController : MonoBehaviour
 	{
 		// Assign the Rigidbody component to our private rb variable
 		rb = GetComponent<Rigidbody>();
+
+		Mesh = GetComponent<Renderer>();
 
 		// Set the count to zero 
 		count = 0;
