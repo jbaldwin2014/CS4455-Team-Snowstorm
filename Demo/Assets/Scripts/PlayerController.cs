@@ -73,9 +73,9 @@ public class PlayerController : MonoBehaviour
 
 	void SetCountText()
 	{
-		countText.text = "Snowballs: " + count.ToString();
+		countText.text = "Snowflakes: " + count.ToString();
 
-		if (count >= 12)
+		if (count >= 6)
 		{
 			// Set the text value of your 'winText'
 			winTextObject.SetActive(true);
